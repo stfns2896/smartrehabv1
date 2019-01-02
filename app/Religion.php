@@ -16,4 +16,9 @@ class Religion extends Model
         parent::boot();
         static::addGlobalScope(new ReligionScope);
     }
+
+    // public function patient()
+    // {
+    //     return $this->belongsTo(Patient::class);
+    // }
 }
