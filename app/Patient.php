@@ -27,4 +27,24 @@ class Patient extends Model
     {
         return $this->belongsTo(City::class);
     }
+
+    public function patientSource()
+    {
+        return $this->belongsTo(PatientSource::class);
+    }
+
+    public function costSource()
+    {
+        return $this->belongsTo(CostSource::class);
+    }
+
+    public function frequency()
+    {
+        return $this->belongsTo(Frequency::class);
+    }
+
+    public function drugs()
+    {
+        return $this->belongsToMany(Drug::class);
+    }
 }
